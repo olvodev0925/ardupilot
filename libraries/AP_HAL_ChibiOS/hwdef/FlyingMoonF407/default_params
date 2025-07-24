@@ -1,0 +1,18 @@
+# MAVLink через USB
+SERIAL0_PROTOCOL 1
+SERIAL0_BAUD 115200
+
+# MAVLink ID
+SYSID_THISMAV 1
+
+# Логування в RAM (без SD)
+LOG_BACKEND_TYPE 1
+
+# Відключити збереження параметрів
+PARAM_SAVE 0
+
+# Для тестів:
+ARMING_REQUIRE 0
+GPS_TYPE 0
+
+STAT_RUNTIME 777

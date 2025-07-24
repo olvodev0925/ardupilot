@@ -1,0 +1,1 @@
+../../../../../modules/ChibiOS/os/common/ext/ST/STM32F4xx/stm32f4xx.h

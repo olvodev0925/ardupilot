@@ -55,8 +55,7 @@ Iris {
   translation 0 0 0.09
   controller "ardupilot_vehicle_controller"
   controllerArgs [
-    "--motors"
-    "m1_motor, m2_motor, m3_motor, m4_motor"
+    "--motors","m1_motor,m2_motor,m3_motor,m4_motor"
   ]
   extensionSlot [
   ]

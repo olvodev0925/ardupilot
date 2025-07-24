@@ -57,20 +57,31 @@
 #define QMC5883L_REG_ID 0x0D
 #define QMC5883_ID_VAL 0xFF
 
+extern const AP_HAL::HAL& hal;
+
 AP_Compass_Backend *AP_Compass_QMC5883L::probe(AP_HAL::OwnPtr<AP_HAL::I2CDevice> dev,
                                                bool force_external,
                                                enum Rotation rotation)
 {
+	// add New
+   	hal.console->printf("probe_qmc5883 1 \n");
+   	
     if (!dev) {
         return nullptr;
     }
 
+	// add New
+   	hal.console->printf("probe_qmc5883 2 \n");
+   	
     AP_Compass_QMC5883L *sensor = NEW_NOTHROW AP_Compass_QMC5883L(std::move(dev),force_external,rotation);
     if (!sensor || !sensor->init()) {
         delete sensor;
         return nullptr;
     }
 
+	// add New
+   	hal.console->printf("probe_qmc5883 3 \n");
+   	
     return sensor;
 }
 

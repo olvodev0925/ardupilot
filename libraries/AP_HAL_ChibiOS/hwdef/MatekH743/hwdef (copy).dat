@@ -1,5 +1,10 @@
 # hw definition file for processing by chibios_pins.py
 # for Matek H743-WING
+define TEST_HDEF_ACTIVE2222 1
+
+
+define DEFAULT_PARAMS_FILE default_params
+
 
 # MCU class and specific type
 MCU STM32H7xx STM32H743xx
@@ -199,10 +204,6 @@ define HAL_PROBE_EXTERNAL_I2C_COMPASSES
 define HAL_I2C_INTERNAL_MASK 0
 define HAL_COMPASS_AUTO_ROT_DEFAULT 2
 
-
-# виключає Optical Flow і зменшує файл на 26кб
-#define AP_OPTICALFLOW_ENABLED 0
-
 # two IMUs
 # H743-V1,      ICM20602, MPU6000
 # H743-V1.5/V2, ICM42605, MPU6000
@@ -227,3 +228,6 @@ ROMFS_WILDCARD libraries/AP_OSD/fonts/font*.bin
 
 # build ABIN for flash-from-bootloader support:
 env BUILD_ABIN True
+
+#print("📦 loading default params")
+#include default_params

@@ -1,0 +1,8 @@
+#pragma once
+
+#define BOARD_NAME "F4 Disco USB"
+#define STM32_LSECLK 0U
+#define STM32_HSECLK 8000000U
+#define STM32_HSE_BYPASS FALSE
+
+#define BOARD_LOWBAT_LIMIT 3300

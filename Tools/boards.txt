@@ -1,0 +1,13 @@
+blackpill_f411_usb
+    board: blackpill_f411_usb
+    arch: stm32f4
+    toolchain: arm-none-eabi
+f4disco_usb
+    board: f4disco_usb
+    arch: stm32f4
+    toolchain: arm-none-eabi
+BlackPillF411
+    board: BlackPillF411
+    arch: stm32f4
+    toolchain: arm-none-eabi
+

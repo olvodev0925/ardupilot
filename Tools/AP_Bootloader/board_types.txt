@@ -508,6 +508,9 @@ AP_HW_AEROFOX_H7                     7110
 AP_HW_Accton_Godwit_GA1        7120
 
 # please fill gaps in the above ranges rather than adding past ID #7199
+AP_HW_BlackPillF411        8101
+
+
 
 
 # OpenDroneID enabled boards. Use 10000 + the base board ID

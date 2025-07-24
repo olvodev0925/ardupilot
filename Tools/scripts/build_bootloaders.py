@@ -90,6 +90,7 @@ def build_board(board):
     return True
 
 for board in get_board_list():
+#for board in ['BlackPillF411']:
     if not fnmatch.fnmatch(board, args.pattern):
         continue
     print("Building for %s" % board)

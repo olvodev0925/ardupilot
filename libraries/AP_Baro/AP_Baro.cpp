@@ -371,6 +371,7 @@ void AP_Baro::calibrate(bool save)
     for (uint8_t i=0; i<_num_sensors; i++) {
         if (sensors[i].calibrated) {
             GCS_SEND_TEXT(MAV_SEVERITY_INFO, "Barometer %u calibration complete", i+1);
+            //GCS_SEND_TEXT(MAV_SEVERITY_INFO, "if (sensors[i].calibrated) {" );
             num_calibrated++;
         }
     }
