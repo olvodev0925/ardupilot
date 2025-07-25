@@ -54,9 +54,22 @@ StraightRoadSegment {
 Iris {
   translation 0 0 0.09
   controller "ardupilot_vehicle_controller"
-  controllerArgs [
-    "--motors","m1_motor,m2_motor,m3_motor,m4_motor"
-  ]
+controllerArgs [
+  "--motors"
+  "m1_motor,m4_motor,m2_motor,m3_motor"
+  "--sitl-address"
+  "127.0.0.1"
+  "--instance"
+  "0"
+  "--accel"
+  "accelerometer"
+  "--imu"
+  "inertial unit"
+  "--gyro"
+  "gyro"
+  "--gps"
+  "gps"
+]
   extensionSlot [
   ]
 }
